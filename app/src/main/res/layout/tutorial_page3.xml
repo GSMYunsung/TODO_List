@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_weight="4"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/lottie_layer_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="676-done.json"
+            app:lottie_speed="0.5"/>
+
+        <LinearLayout
+            android:layout_weight="0"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ready"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/What_you_todo"
+                android:textColor="@color/black"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Today_I_Start"
+                android:textColor="@color/black"
+                android:textSize="25dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>
