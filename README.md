@@ -3,3 +3,4 @@
 ### [현재 들어간 STACK]
 
 - ViewPager
+- BottomNavigation
