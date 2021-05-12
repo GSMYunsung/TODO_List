@@ -3,20 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:enabled="true"
+        android:id="@+id/today_todo"
         android:icon="@drawable/main"
         android:title="오늘의 Todo!">
     </item>
 
     <item
-        android:enabled="true"
+        android:id="@+id/your_achievement"
         android:icon="@drawable/achievement"
         android:title="당신의 달성">
     </item>
 
     <item
-        android:enabled="true"
+        android:id="@+id/todo_add"
+        android:icon="@drawable/achievement"
+        android:title="Todo추가하기">
+    </item>
+
+    <item
+        android:id="@+id/Your_today"
         android:icon="@drawable/main"
         android:title="당신의 오늘">
     </item>
+
+    <item
+        android:id="@+id/record"
+        android:icon="@mipmap/ic_launcher"
+        android:title="기록들"></item>
 </menu>
