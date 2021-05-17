@@ -1,55 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     android:background="@color/white"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <RelativeLayout
-        android:layout_marginTop="20dp"
+        android:layout_margin="5dp"
+        android:paddingLeft="50dp"
         android:id="@+id/main_stroke"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:background="@drawable/background_sm"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
         android:orientation="vertical">
 
         <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
             android:id="@+id/todo_List_item_Image"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_margin="25dp"
             android:src="@drawable/main" />
 
         <RelativeLayout
+            android:layout_centerInParent="true"
             android:layout_marginRight="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@id/todo_List_item_Image"
-            android:gravity="center_vertical">
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/todo_List_item_Image">
 
             <TextView
+                android:layout_centerHorizontal="true"
                 android:id="@+id/todo_List_item_titleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="하루에 한번 운동하기"
+                android:text="자격증 공부하기"
                 android:textColor="@color/black"
-                android:textSize="16dp"
+                android:textSize="14dp"
                 android:textStyle="bold" />
 
             <TextView
+                android:autoSizeTextType="uniform"
                 android:id="@+id/Achievement"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/todo_List_item_titleText"
-                android:gravity="center"
                 android:text="달성"
                 android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="40dp" />
 
         </RelativeLayout>
 
     </RelativeLayout>
 
-</LinearLayout>
+</RelativeLayout>
