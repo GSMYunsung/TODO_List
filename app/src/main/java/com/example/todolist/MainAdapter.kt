@@ -11,8 +11,8 @@ import org.w3c.dom.Text
 
 class MainAdapter : RecyclerView.Adapter<MainAdapter.ItemViewHolder>() {
 
-    var items: MutableList<Data> = mutableListOf(Data("하루에 한번 스트레칭", "미달성"),
-            Data("잠 8시간 이상자기", "달성"), Data("자격증 공부하기", "미달성"))
+    var items: MutableList<Data> = mutableListOf(Data("하루에 한번 스트레칭", "미달성","~"),
+            Data("잠 8시간 이상자기", "달성","~"), Data("전공책 읽고 복습하기", "미달성","~"))
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
