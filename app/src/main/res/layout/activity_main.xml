@@ -42,16 +42,16 @@
             android:background="@drawable/background"
             android:elevation="40dp"
             android:layout_margin="20dp"
-            android:id="@+id/frame"
             android:layout_weight="3"
             android:layout_width="match_parent"
             android:layout_height="0dp">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/today_todo_recycler_view"
-                android:layout_margin="20dp"
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_margin="23dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+
         </FrameLayout>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
